@@ -14,7 +14,7 @@ function Contact() {
 
   const onSubmit = async (data) => {
     const userInfo = {
-      access_key: "c660c9ce-c6f9-41f7-aa0f-8a24ea887b94",
+      access_key: "8e58e943-ac57-47d8-a6c7-4cc99ede8ff7",
       name: data.username,
       email: data.email,
       message: data.message,
@@ -107,7 +107,7 @@ function Contact() {
                 </li>
                 <li className="flex items-center space-x-2">
                   <FaMapMarkerAlt className="text-green-500" />
-                  <span>Delhi, NCR, India</span>
+                  <span>Asnasol, West Bengal, India</span>
                 </li>
               </ul>
             </div>

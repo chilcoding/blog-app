@@ -132,6 +132,7 @@ function Register() {
               className="w-full p-2 mb-4 border rounded-md"
             >
               <option value="">Select Your Education</option>
+              <option value="BCA ">B.TECH</option>
               <option value="BCA ">BCA</option>
               <option value="MCA ">MCA</option>
               <option value="MBA ">MBA</option>

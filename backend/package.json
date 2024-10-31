@@ -6,12 +6,12 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon index.js"
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "blog-app"
   ],
-  "author": "Akhil k",
+  "author": "Hemanta Hembram ",
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",

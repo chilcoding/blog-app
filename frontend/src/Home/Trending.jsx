@@ -26,7 +26,7 @@ function Trending() {
     },
   };
   return (
-    <div className=" container mx-auto">
+    <div className=" container mx-4">
       <h1 className=" text-2xl font-semibold mb-4">Trending</h1>
       <Carousel responsive={responsive}>
         {blogs && blogs.length > 0 ? (
@@ -34,7 +34,7 @@ function Trending() {
             return (
               <div
                 key={element._id}
-                className="p-4 bg-white border border-gray-400 rounded-lg shadow-md mx-2"
+                className="p-4 bg-white border border-black rounded-lg shadow-lg mx-2"
               >
                 <Link to={`/blog/${element._id}`}>
                   <div className="relative">
@@ -43,7 +43,7 @@ function Trending() {
                       alt="blog"
                       className="w-full h-56 object-cover rounded-t-lg"
                     />
-                    <div className="absolute top-4 left-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">
+                    <div className="absolute top-4 left-4 bg-red-600 text-white px-3 py-1 rounded-full text-sm">
                       {element.category}
                     </div>
                   </div>
@@ -60,7 +60,7 @@ function Trending() {
                         alt="author_avatar"
                         className="w-10 h-10 rounded-full"
                       />
-                      <p className="ml-3 text-gray-400 text-sm">
+                      <p className="ml-3 text-blue-700 text-sm">
                         {element.adminName}
                       </p>
                     </div>
