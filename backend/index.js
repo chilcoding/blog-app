@@ -11,7 +11,7 @@ import cors from "cors";
 dotenv.config(); // Load environment variables
 
 const app = express();
-const port = process.env.PORT || 4002; // Default port if not defined
+const port = process.env.PORT || 10000; // Default port if not defined
 const MONGO_URI = process.env.MONGO_URI; // Ensure this matches your .env file
 
 // Middleware
