@@ -58,9 +58,7 @@ function Navbar() {
               <Link to="/contact" className="hover:text-blue-500">
                 CONTACT
               </Link>
-              <Link to="/contact" className="hover:text-blue-500">
-                Nothing
-              </Link>
+              
             </ul>
             <div className="md:hidden" onClick={() => setShow(!show)}>
               {show ? <IoCloseSharp size={24} /> : <AiOutlineMenu size={24} />}
