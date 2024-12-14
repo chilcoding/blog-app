@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { IoCloseSharp } from "react-icons/io5";
@@ -21,7 +21,7 @@ function Navbar() {
         { withCredentials: true }
       );
       console.log(data);
-      localStorage.removeItem("jwt"); // deleting token in localStorage so that if user logged out it will goes to login page
+      localStorage.removeItem("jwt"); 
       toast.success(data.message);
       setIsAuthenticated(false);
       navigateTo("/login");
@@ -57,6 +57,9 @@ function Navbar() {
               </Link>
               <Link to="/contact" className="hover:text-blue-500">
                 CONTACT
+              </Link>
+              <Link to="/contact" className="hover:text-blue-500">
+                Nothing
               </Link>
             </ul>
             <div className="md:hidden" onClick={() => setShow(!show)}>
